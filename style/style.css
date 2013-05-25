@@ -1,0 +1,645 @@
+body {
+	background-color:  rgb(26, 81, 129);
+	font-family: 'Dancing Script', cursive;
+	color: white;
+}
+.mainheader {
+	color: white;
+	position:  absolute;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 24px;
+	z-index: 9;
+	font-family: 'ABeeZee', sans-serif;
+	opacity: 0;
+}
+.mainheader.on {
+	opacity: 1;
+	-webkit-animation: flipInX 2s linear 0s 1 forwards ;
+}
+#line2 {
+	margin-left:120px;
+}
+#apprentice {
+	font-style:italic;
+}
+#tagline {
+	color: white;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 680px;
+	font-size: 50px;
+	z-index: 8;
+	text-shadow: 0 2px #2db0e4;
+	opacity: 0;
+}
+#tagline.on {
+	opacity: 1;
+	-webkit-animation: flipInX 2s linear 0s 1 forwards ;
+}
+.circles a {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	text-shadow:1px 1px black;
+}
+#startupcircle {
+	background-color: rgb(157, 51, 29);
+	height: 115px;
+	width: 115px;
+	position: absolute;
+	padding-top: 120px;
+	padding-right: 120px;
+	padding-left: 110px;
+	padding-bottom: 110px;
+	border-radius: 50%;
+	margin-left: 60px;
+	margin-top: 100px;
+	font-size:38px;
+	z-index: 5;
+	text-align:center;
+	
+}
+#startupcircle:hover {
+	background-color: rgb(177, 71, 49);
+	text-shadow:2px 2px black;
+}
+#legalcircle {
+	background-color: rgb(198, 94, 32);
+	height: 85px;
+	width: 85px;
+	position: absolute;
+	padding-top: 105px;
+	padding-right: 90px;
+	padding-left: 80px;
+	padding-bottom: 65px;
+	border-radius: 50%;
+	margin-left: 60px;
+	margin-top: 380px;
+}
+#legalcircle:hover {
+	background-color: rgb(218, 114, 52);
+	text-shadow:2px 2px black;
+}
+#fashioncircle {
+	background-color: rgb(50, 135, 156);
+	height: 105px;
+	width: 105px;
+	position: absolute;
+	padding-top: 130px;
+	padding-right: 125px;
+	padding-left: 85px;
+	padding-bottom: 80px;
+	border-radius: 50%;
+	margin-left: 280px;
+	margin-top: 350px;
+	z-index: 6;
+	font-size:36px;
+}
+#fashioncircle:hover {
+	background-color: rgb(70, 155, 176);
+	text-shadow:2px 2px black;
+}
+#mediacircle {
+	background-color: rgb(231, 168, 51);
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	padding-top: 100px;
+	padding-right: 90px;
+	padding-left: 90px;
+	padding-bottom: 80px;
+	border-radius: 50%;
+	margin-left: 370px;
+	margin-top: 90px;
+	font-size:36px;
+}
+#mediacircle:hover {
+	background-color: rgb(251, 188, 71);
+	text-shadow:2px 2px black;
+}
+#socialcircle {
+	background-color: rgb(148, 226, 252);
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	padding-top: 90px;
+	padding-right: 80px;
+	padding-left: 80px;
+	padding-bottom: 70px;
+	border-radius: 50%;
+	margin-left: 540px;
+	margin-top: 310px;
+}
+#socialcircle:hover {
+	background-color: rgb(168, 246, 272);
+	text-shadow:2px 2px black;
+}
+.circles a {
+	opacity: 0;
+}
+.circles a.on {
+	opacity: 1;
+	-webkit-animation: bounceIn 1s linear 0s 1 forwards ;
+}
+#leaningpic {
+	height: 700px;
+	width: auto;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-right: 0;
+	float: right;
+}
+ul {
+	list-style-type: none;
+}
+.nav .startup, .legal, .fashion, .media, .social {
+	color:  white;
+	text-decoration: none;
+	display:  block;
+	height: 40px;
+	width: 55px;
+	padding-top: 15px;
+	border:  2px solid transparent;
+}
+.nav li {
+	width: 80px;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	font-size:18px;
+}
+.nav li a:hover {
+  border-radius: 50%;
+  text-align: center;	
+}
+.selected {
+	display:  block;
+	height:  40px;
+	width: 55px;
+	padding-top: 15px;
+	border-radius: 50%;
+	text-align:center;
+	text-shadow:1px 1px black;
+}
+#home img {
+	background-color: white;
+	display:  block;
+	height:  55px;
+	width: 55px;
+	padding-top: 0px;
+	margin-top: 0px;
+	border-radius: 50%;
+	text-align:center;
+	opacity: .5;
+	border: 2px solid white;
+}
+.selected.startup {
+	background-color: rgb(157, 51, 29);
+	}
+.selected.legal {
+	background-color: rgb(198, 94, 32);
+	}
+.selected.fashion {
+	background-color: rgb(50, 135, 156);
+	}
+.selected.media {
+	background-color: rgb(231, 168, 51);
+	}
+.selected.social {
+	background-color: rgb(149, 226, 252);
+	}
+.nav {
+    overflow: hidden;
+}
+.nav li a#home img:hover {
+	opacity: 1;
+	}
+.nav li a.startup:hover {
+	border: 2px solid rgb(157, 51, 29);
+	}
+.nav li a.legal:hover {
+	border: 2px solid rgb(198, 94, 32);
+	}
+.nav li a.fashion:hover {
+	border: 2px solid rgb(50, 135, 156);
+	}
+.nav li a.media:hover {
+	border: 2px solid rgb(231, 168, 51);
+	}
+.nav li a.social:hover {
+	border: 2px solid rgb(149, 226, 252);
+}
+#social {
+  background-color:  white;
+  position: absolute; 
+  top: 0px; 
+  width: 42px;
+  right: 0px;
+}
+#social a {
+  float: right;
+  opacity: 0.5;
+}
+
+#social a:hover {
+  opacity: 1;
+}
+#social a img {
+  display: block;
+  height: 42px;
+  width:  42px;
+}
+
+
+/* STARTUP PAGE */
+
+#startupexperience {
+	background-color: rgb(157, 51, 29);
+	height: 290px;
+	width: 290px;
+	padding-top: 20px;
+	padding-right: 70px;
+	padding-left: 70px;
+	padding-bottom: 120px;
+	border-radius: 50%;
+	float:left;
+	color: white;
+	font-size: 14px;
+	margin:80px 0px 0px 30px;
+	font-family: 'ABeeZee', sans-serif;
+	text-align:center;
+	opacity: 0;
+}
+#startupexperience.on {
+	opacity: 1;
+	-webkit-animation: bounceInLeft 1.5s linear 0s 1 forwards ;
+}
+.startupcolumns h2{
+	font-family:'Dancing Script', cursive;
+	font-size:26px;
+	text-shadow:1px 1px black;	
+}
+/*
+.startupcolumns{
+	float: left;
+	width: 30%;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left:10px;
+	margin-right: 10px;
+}
+*/
+#appscircle {
+	background-color: rgb(157, 51, 29);
+	height: 320px;
+	width: 320px;
+	padding-top: 20px;
+	padding-right: 55px;
+	padding-left: 55px;
+	padding-bottom: 90px;
+	border-radius: 50%;
+	float:left;
+	color: white;
+	font-size: 30px;
+	text-align:center;
+	margin:80px 0px 0px 0px;
+	opacity: 0;
+}
+#appscircle.on {
+	opacity: 1;
+	-webkit-animation: bounceIn 1.5s linear 0s 1 forwards ;
+}
+
+.apps a{
+	text-decoration:none;
+}
+.apps img {
+	width: 60px;
+	height: 60px;
+	margin:10px 10px 0px 10px;
+}
+#mailchimp, #omnigraffle, #bugrocket{
+	margin-top:20px;
+}
+#bugrocket {
+	width:120px;
+}
+#zendesk {
+	height:80px;
+	width:120px;
+}
+#skills {
+	background-color: rgb(157, 51, 29);
+	height: 285px;
+	width: 285px;
+	padding-top: 20px;
+	padding-right: 70px;
+	padding-left: 70px;
+	padding-bottom: 120px;
+	border-radius: 50%;
+	float:left;
+	color: white;
+	text-align:center;
+	margin:80px 30px 0px 0px;
+	font-family: 'ABeeZee', sans-serif;
+	font-size: 16px;
+	opacity: 0;
+}
+#skills.on {
+	opacity: 1;
+	-webkit-animation: bounceInRight 1.5s linear 0s 1 forwards ;
+}
+.italics {
+	font-style:italic;
+	font-size:12px;
+}
+
+/* LEGAL PAGE */
+
+.resumecircle {
+	margin-top: 100px;
+	font-size:16px;
+}
+
+#trademark {
+	opacity: 0;
+}
+#trademark.on {
+	opacity: 1;
+	-webkit-animation: bounceIn 1.5s linear 0s 1 forwards ;
+}
+#contracts {
+	opacity: 0;
+}
+#contracts.on {
+	opacity: 1;
+	-webkit-animation: bounceInLeft 1.7s linear 0s 1 forwards ;
+}
+#education {
+	opacity: 0;
+}
+#education.on {
+	opacity: 1;
+	-webkit-animation: bounceInRight 1.7s linear 0s 1 forwards ;
+}
+
+.legalheader {
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-size:30px;
+	font-weight:bolder;
+	text-shadow:1px 1px black;
+}
+#education {
+	background-color: rgb(188, 94, 32);
+	height: 290px;
+	width: 290px;
+	position: absolute;
+	padding-top:45px;
+	padding-left: 85px;
+	padding-right: 65px;
+	padding-bottom: 95px;
+	border-radius: 50%;
+	margin-left: 740px;
+	margin-top: 170px;
+	font-family: 'ABeeZee', sans-serif;
+}
+#trademark {
+	background-color: rgb(228, 94, 32);
+	height: 320px;
+	width: 320px;
+	position: absolute;
+	padding-top:10px;
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-bottom: 140px;
+	border-radius: 50%;
+	margin-left: 360px;
+	margin-top: 0px;
+	z-index:1;
+	font-family: 'ABeeZee', sans-serif;
+}
+#contracts {
+	background-color: rgb(208, 114, 62);
+	height: 240px;
+	width: 240px;
+	position: absolute;
+	padding-top:25px;
+	padding-left: 65px;
+	padding-right: 85px;
+	padding-bottom: 115px;
+	border-radius: 50%;
+	margin-left: 70px;
+	margin-top: 160px;
+	font-family: 'ABeeZee', sans-serif;
+}
+
+
+/* FASHION PAGE */
+
+#anchr {
+	height:200px;
+	width:200px;
+	padding-top:90px;
+	padding-right:50px;
+	padding-left:50px;
+	padding-bottom:10px;
+	border-radius: 50%;
+	margin-top:120px;
+	margin-left:40px;
+	margin-right:40px;	
+	background-color: rgb(50, 135, 156);
+	font-family: 'ABeeZee', sans-serif;
+	float:left;
+		opacity: 0;
+}
+#anchr.on{
+	opacity: 1;
+	-webkit-animation: bounceInLeft 1.5s linear 0s 1 forwards ;
+}
+#fashiontechstartups {
+	height:340px;
+	width:340px;
+	padding-top:30px;
+	padding-right:55px;
+	padding-left:55px;
+	padding-bottom:80px;
+	border-radius: 50%;
+	margin-top:60px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color: rgb(50, 135, 156);
+	font-family: 'Dancing Script', cursive;
+	text-shadow:1px 1px black;
+	float:left;
+	text-align:center;
+	opacity: 0;
+}
+#fashiontechstartups.on{
+	opacity: 1;
+	-webkit-animation: bounceInUp 1.5s linear 0s 1 forwards ;
+}
+#fashiontechstartups a {
+	text-decoration:none;
+	}
+#heart {
+	height:25px;
+	width: 25px;
+}
+#beautyarmy {
+	height:80px;
+	width: 120px;
+}
+#popsugar {
+	height:50px;
+	width:140px;
+	margin-right:20px;
+}
+#twf{
+	height:50px;
+	width: 120px;
+	margin-top:60px;
+}
+#rocksbox {
+	height:50px;
+	width:150px;
+	margin-top:60px;
+	margin-right:10px;
+}
+#pinterestlogo{
+	height:80px;
+	width: 120px;
+	margin-top:10px;
+}
+#togandporter {
+	height:80px;
+	width: 80px;
+	margin-top:10px;
+	margin-right:10px;
+}
+#rocksbox, #popsugar {
+	margin-left:15px;
+}
+
+#ms-jd {
+	height:200px;
+	width:200px;
+	padding-top:45px;
+	padding-right:45px;
+	padding-left:65px;
+	padding-bottom:65px;
+	border-radius: 50%;
+	margin-top:120px;
+	margin-left:40px;
+	margin-right:40px;
+	background-color: rgb(50, 135, 156);
+	font-family: 'ABeeZee', sans-serif;
+	float:left;
+	opacity: 0;
+}
+#ms-jd.on{
+	opacity: 1;
+	-webkit-animation: bounceInRight 1.5s linear 0s 1 forwards ;
+}
+#ms-jd img{
+	height:100px;
+	width:250px;
+}
+
+/* MEDIA PAGE */
+
+.columns{
+	float: left;
+	width: 30%;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left:10px;
+	margin-right: 10px;
+}
+.mediaheader {
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+#TV {
+	height: 480px;
+	display: block;
+	overflow: scroll;
+	
+}
+.replace-thumb {
+	position: relative;
+	display: inline-block;
+}
+.replace-thumb img{
+	width:80%;
+	opacity:.7;
+}
+.replace-thumb:before {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+
+	content: "\25b6";
+	color:white;
+	display: block;
+	width: 70px;
+	height: 50px;
+	font-size:28px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	top: 50%;
+	margin-top: -25px;
+	border-radius:25%;
+	padding-top:10px;
+	padding-left:8px;
+	background-color: red;
+	z-index: 5;
+}
+.replace-thumb:hover img{
+	opacity:1;
+}
+.list {
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+#projects {
+	height: 480px;
+	display: block;
+	overflow:scroll;
+}
+#audio {
+	height: 480px;
+	display: block;
+	overflow:scroll;
+	font-size: 14px;
+	font-family: 'ABeeZee', sans-serif;
+}
+.clearboth {
+	clear: both;
+}
+
+
+/* SOCIAL PAGE */
+
+#twitterfeed {
+	margin-top:100px;
+}
+#wufoo-z7x4m1 {
+	margin-top: 100px;
+}
+
+
+

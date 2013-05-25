@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Let's get social!</title>
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style/normalize.css" />
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+<link rel="stylesheet" type="text/css" href="style/unsemantic-grid-responsive.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div class="nav">
+  <ul>
+    <li><a href="index.html" id="home"><img src="images/chathead.png" alt="Nicole"></a></li>
+    <li><a href="startup.html" class="startup">Startup</a></li>
+    <li><a href="legal.html" class="legal">Legal</a></li>
+    <li><a href="fashion.html" class="fashion">Fashion</a></li>
+    <li><a href="media.html" class="media">Media</a></li>
+    <li><a href="social.html" class="selected social">Social</a></li>
+  </ul>
+</div>
+<div id="social">
+   <a href="https://twitter.com/The_Nicole_Chiu" target="_blank">
+     <img src="images/twitterbutton.jpeg" alt="Twitter" id="twitter">
+   </a>
+   <a href="http://www.youtube.com/user/TheNicoleChiu" target="_blank"> <img src="images/youtubebutton.jpeg" alt="Youtube" id="youtube">
+   </a>
+   <a href="http://www.linkedin.com/in/nicolechiu/" target="_blank">
+     <img src="images/linkedinbutton.jpeg" alt="Linkedin" id="linkedin">
+   </a>
+   <a href="http://pinterest.com/thenicolechiu/boards/" target="_blank">
+     <img src="images/pinterestbutton.jpeg" alt="Pinterest" id="pinterest">
+   </a>
+</div>
+
+
+<div class="grid-container clearboth">
+<div id="twitterfeed" class="grid-30 prefix-10 suffix-10">
+  <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/The_Nicole_Chiu" data-widget-id="323239592155287552">Tweets by @The_Nicole_Chiu</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<div id="wufoo-z7x4m1" class="grid-50">
+Fill out my <a href="http://thenicolechiu.wufoo.com/forms/z7x4m1">online form</a>.
+</div>
+</div>
+<script type="text/javascript">var z7x4m1;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'thenicolechiu', 
+'formHash':'z7x4m1', 
+'autoResize':true,
+'height':'404',
+'async':true,
+'header':'show'};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { z7x4m1 = new WufooForm();z7x4m1.initialize(options);z7x4m1.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+<!--<div id="contactform" class="grid-50">  
+		<form>
+ 			What's your name?<br> <input type="text" name="name"/>
+ 			<br>
+ 			How can I reach you? <br><input type="text" name="email"/>
+ 			<br>
+ 			What's on your mind? <br><textarea></textarea>
+ 			<br>
+        <input type="submit" name="submit" value="Let's Talk!" id="heart">
+		</form>
+    </div>
+    </div>
+		-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+</script>
+<script src="javascript.js">
+</script>
+</body>
+</html>
