@@ -155,7 +155,7 @@ body {
 ul {
 	list-style-type: none;
 }
-.nav .startup, .legal, .fashion, .media, .social {
+.startup, .legal, .fashion, .media, .social {
 	color:  rgb(171, 179, 179);
 	text-decoration: none;
 	display:  block;
