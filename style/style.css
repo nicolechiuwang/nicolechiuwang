@@ -253,7 +253,107 @@ ul {
   height: 42px;
   width:  42px;
 }
-
+@media (max-width: 320px) {
+	.mainheader {
+		font-size: 16px;
+	}
+	#line2 {
+		margin-left:20px;
+	}
+	#tagline {
+		margin-top: 50px;
+		margin-left: 200px;
+		font-size: 20px;
+	}
+	#leaningpic {
+		visibility: hidden;
+	}
+	#startupcircle {
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	padding-top: 70px;
+	padding-right: 110px;
+	padding-left: 70px;
+	padding-bottom: 110px;
+	border-radius: 50%;
+	margin-left: 20px;
+	margin-top: 70px;
+	font-size:20px;
+	
+	}
+	#legalcircle {
+		background-color: rgb(198, 94, 32);
+		height: 15px;
+		width: 15px;
+		position: absolute;
+		padding-top: 50px;
+		padding-right: 80px;
+		padding-left: 30px;
+		padding-bottom: 60px;
+		border-radius: 50%;
+		margin-left: 25px;
+		margin-top: 240px;
+		font-size: 20px;
+	}
+	#fashioncircle {
+		background-color: rgb(50, 135, 156);
+		height: 25px;
+		width: 25px;
+		position: absolute;
+		padding-top: 70px;
+		padding-right: 102px;
+		padding-left: 48px;
+		padding-bottom: 80px;
+		border-radius: 50%;
+		margin-left: 140px;
+		margin-top: 230px;
+		font-size:20px;
+	}
+	#mediacircle {
+		background-color: rgb(231, 168, 51);
+		height: 110px;
+		width: 110px;
+		position: absolute;
+		padding-top: 65px;
+		padding-right: 35px;
+		padding-left: 45px;
+		padding-bottom: 15px;
+		border-radius: 50%;
+		margin-left: 210px;
+		margin-top: 80px;
+		font-size:20px;
+	}
+	#socialcircle {
+		background-color: rgb(148, 226, 252);
+		height: 15px;
+		width: 15px;
+		position: absolute;
+		padding-top: 20px;
+		padding-right: 60px;
+		padding-left: 40px;
+		padding-bottom: 80px;
+		border-radius: 50%;
+		margin-left: 290px;
+		margin-top: 260px;
+		font-size: 20px;
+		text-align: center;
+	}
+	#social {
+	  background-color:  white;
+	  position: absolute; 
+	  width: 50px;
+	}
+	#social a {
+	  float: right;
+	  opacity: 0.5;
+	}
+	#social a img {
+	  display: block;
+	  height: 25px;
+	  width:  25px;
+	}
+}
 
 /* STARTUP PAGE */
 
