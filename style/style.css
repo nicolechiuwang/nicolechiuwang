@@ -559,9 +559,16 @@ ul {
 	margin-left:40px;
 	margin-right:40px;	
 	background-color: rgb(50, 135, 156);
+	text-align: center;
 	font-family: 'ABeeZee', sans-serif;
 	float:left;
 		opacity: 0;
+}
+#anchr img {
+	height:110px;
+	width:180px;
+	margin-top:-40px;
+	margin-left:5px;
 }
 #anchr.on{
 	opacity: 1;
@@ -579,11 +586,17 @@ ul {
 	margin-left:10px;
 	margin-right:10px;
 	background-color: rgb(50, 135, 156);
-	font-family: 'Dancing Script', cursive;
+	font-family: 'ABeeZee', sans-serif;
 	text-shadow:1px 1px black;
 	float:left;
 	text-align:center;
 	opacity: 0;
+}
+#fashiontechstartups img {
+	height:80px;
+	width:300px;
+	margin-top:50px;
+	margin-bottom:50px;
 }
 #fashiontechstartups.on{
 	opacity: 1;
@@ -635,8 +648,8 @@ ul {
 	height:200px;
 	width:200px;
 	padding-top:45px;
-	padding-right:45px;
-	padding-left:65px;
+	padding-right:55px;
+	padding-left:55px;
 	padding-bottom:65px;
 	border-radius: 50%;
 	margin-top:120px;
@@ -646,6 +659,7 @@ ul {
 	font-family: 'ABeeZee', sans-serif;
 	float:left;
 	opacity: 0;
+	text-align: center;
 }
 #ms-jd.on{
 	opacity: 1;
@@ -653,7 +667,8 @@ ul {
 }
 #ms-jd img{
 	height:100px;
-	width:250px;
+	width:110px;
+	margin-left:5px;
 }
 
 /* MEDIA PAGE */
