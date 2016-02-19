@@ -94,7 +94,7 @@ height: 80px;
 
 h2{
 font-family: Georgia;
-color: #c116e5;
+color: #cca62f;
 font-size: 24px;
 margin-bottom: 20px;
 }
@@ -234,6 +234,11 @@ padding-top: 20px;
 	height: 48px;
 }
 
+.boonandgable  {
+	width: 48px; 
+	height: 48px;
+}
+
 .twitter-icon, .linkedin-icon, .instagram-icon, a:hover{
 	transition: all 350ms ease-out;
     -webkit-transition: all 350ms ease-out;
@@ -256,4 +261,8 @@ padding-top: 20px;
 	background-position: -240px -48px; 
 	width: 48px; 
 	height: 48px;
+}
+
+.boonandgable:hover {
+
 }
