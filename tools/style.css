@@ -205,10 +205,10 @@ padding-top: 20px;
 }
 
 .connect img{
-margin-right: 5px;
+	margin-right: 5px;
 }
 
-.twitter-icon, .linkedin-icon, .instagram-icon {
+.twitter-icon, .linkedin-icon, .instagram-icon, .boonandgable {
 	display: inline-block;
 	background: url('../images/sprites-social.png') no-repeat;
 	margin-right: 8px;
